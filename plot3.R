@@ -16,7 +16,7 @@ plot3 <- function(){
     with(houseDT, points(houseDT$weekdays, houseDT$Sub_metering_3, type="l", col="blue"))
     
     ##add legend
-    legend("topright", y.intersp = 0.4 , pch="-", col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+    legend("topright", y.intersp = 0.8, x.intersp = 1 , pch="-", col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
     
     ##create plot3 png
     dev.copy(png, file="plot3.png")
